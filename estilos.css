@@ -1,0 +1,268 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,700;1,400&display=swap');
+
+/*Variaveis*/
+ :root{
+ 	/*Cores da tipografia em especial e botao*/
+ 	 font-size: 16px;
+ 	--Ciano:hsl(179,62%,43%);
+ 	--Amarelo-B: hsl(71,73%,54%);
+ 	--Cinza:hsl(204,43%,93%);
+ 	/*Cores de fundo*/
+ 	--Azul-Escuro:hsl(218,22%,67%);
+}
+ /* Container e posicionamentos iniciais/cores*/
+.container{
+	margin-top:4rem;
+	margin-left: 16rem;
+	height: 80vh;
+	width: 60%;
+	font-family: 'Karla', sans-serif;
+	border:none;
+	box-shadow: -1px 0px 22px 2px rgba(0,0,0,0.62);
+	border-radius: 10px;
+	
+}
+.header{
+	height: 40%;
+}
+.header h1{
+	color:var(--Ciano);
+	padding-left: 3rem;
+	padding-top: 2rem;
+}
+.header h3{
+	padding-top: 2rem;
+	color: var(--Amarelo-B);
+	padding-left: 3rem
+}
+.header p{
+	padding-top: 1rem;
+	color: var(--Azul-Escuro);
+	padding-left: 3rem;
+	line-height: 1.6rem;
+	padding-bottom: 2rem;
+}
+
+/*Caixa1*/
+.caixa{
+	margin-top: 1.5rem;
+	display: flex;
+	background-image: linear-gradient(to right,var(--Ciano) 50%,#4ABEBD 50%);
+	border-radius: 0 0 10px 10px; /* Mesma logica do relogio, os valores sao aplicados em forma horaria*/
+	
+
+}
+.caixa1{	
+	width: 50%;
+	height: 45vh;
+}
+.caixa2{
+	width: 50%;
+	height: 45vh;
+}
+.caixa h4,h3,p{
+	padding-left: 3rem;
+}
+.caixa1 button{
+	margin-top: 2rem;
+	margin-left: 3rem;
+	background-color: var(--Amarelo-B);
+	width: 16rem;
+	height: 3rem;
+	border:none;
+	border-radius: 10px;
+	color: white;
+	font-size: 1.2rem;
+	transition: box-shadow 2s;
+}
+.caixa button:hover{
+	box-shadow: -1px 0px 22px 2px rgba(0,0,0,0.62);
+}
+.caixa1 h4{
+	font-size: 1.3rem;
+	padding-top: 2rem;
+	padding-bottom: 1.6rem;
+	color:white;
+}
+.caixa1 span{
+	color: white;
+	font-size: 2rem;
+	margin-right: 1rem;
+}
+.caixa1 p{
+	color: white;
+}
+.p{
+	color: var(--Cinza);
+	margin-bottom: 1rem;
+}
+
+/*Caixa2 Inicio*/
+.caixa2 h3{
+	padding-top: 2rem;
+	padding-bottom: 1.6rem;
+	color: white;
+}
+.caixa2 p{
+	width: 15rem;
+	height: 14rem;
+	color: var(--Cinza);
+	line-height: 1.4rem;
+}
+
+/*Fim da caixa2*/
+
+/*Media queries*/
+/*De 320px até 360px*/
+@media only screen and (min-width: 360px) and (max-width: 400px){
+		.container{
+		 margin-top: 2rem;
+	    margin-left: 1.3rem;
+	    height: 105vh;
+	    width: 90%;
+		}
+	/*Header*/
+		.header h1{
+			font-size: 1.2rem;
+			padding-left: 0;
+			padding-left: 1rem;
+		}
+		.header h3{
+			font-size: 0.9rem;
+			padding-top: 0;
+			padding-top: 1rem;
+			padding-left: 0;
+			padding-left: 1rem;
+		}
+		.header p{
+			font-size: 0.8rem;
+			padding-top: 0;
+			padding-top: 1rem;
+			padding-left: 0;
+			padding-left: 1rem;
+			width: 17rem;
+		}
+	/*Caixa/s*/
+		.caixa{
+			margin-top: 0;
+			flex-direction: column;
+			background-image: linear-gradient(to bottom,var(--Ciano) 50%,#4ABEBD 50%);
+		}
+		.caixa1{
+			height: 40vh;
+		}
+		.caixa1 h4,p{
+			
+			padding-left: 0;
+			padding-left: 1.4rem;
+		}
+		.caixa1 h4{
+			width: 20rem;
+		}
+		.p{
+		  width: 15rem;
+		}
+		.p2{
+			width: 15rem;
+			font-size: 0.8rem;
+		}
+		.caixa1 button{
+			
+			margin-top: 1rem;
+   		     margin-left: 1rem;
+   		     transition: background-image 8s;
+		}
+		
+
+		.caixa2 h3{
+			padding-left: 0;
+			padding-left: 1.4rem;
+		}
+		.caixa2 p{
+			width: 14rem;
+			font-size: 0.9rem;
+		}
+
+}
+/*De 360px até 400px*/
+@media only screen and (min-width: 320px) and (max-width: 360px){
+		.container{
+		 margin-top: 2rem;
+	    margin-left: 1.3rem;
+	    height: 105vh;
+	    width: 90%;
+		}
+	/*Header*/
+		.header h1{
+			font-size: 1.2rem;
+			padding-left: 0;
+			padding-left: 1rem;
+		}
+		.header h3{
+			font-size: 0.9rem;
+			padding-top: 0;
+			padding-top: 1rem;
+			padding-left: 0;
+			padding-left: 1rem;
+		}
+		.header p{
+			font-size: 0.8rem;
+			padding-top: 0;
+			padding-top: 1rem;
+			padding-left: 0;
+			padding-left: 1rem;
+			width: 17rem;
+		}
+	/*Caixa/s*/
+		.caixa{
+			margin-top: 0;
+			flex-direction: column;
+			background-image: linear-gradient(to bottom,var(--Ciano) 50%,#4ABEBD 50%);
+		}
+		.caixa1{
+			height: 40vh;
+		}
+		.caixa1 h4,p{
+			
+			padding-left: 0;
+			padding-left: 1.4rem;
+		}
+		.caixa1 h4{
+			width: 20rem;
+		}
+		.p{
+		  width: 15rem;
+		}
+		.p2{
+			width: 15rem;
+			font-size: 0.8rem;
+		}
+		.caixa1 button{
+
+			margin-top: 1rem;
+   		     margin-left: 1rem;
+   		     transition: background-image 8s;
+		}
+		
+
+		.caixa2 h3{
+			padding-left: 0;
+			padding-left: 1.4rem;
+		}
+		.caixa2 p{
+			width: 14rem;
+			font-size: 0.9rem;
+		}
+
+}
+
+/*Fim Media queries*/
+
+
+/*Fim Media queries*/
