@@ -262,7 +262,81 @@
 
 }
 
+/*400px ate 500px*/
+	@media only screen and (min-width: 400px) and (max-width: 500px){
+		.container{
+		 margin-top: 2rem;
+	    margin-left: 1.3rem;
+	    height: 105vh;
+	    width: 90%;
+		}
+	/*Header*/
+		.header h1{
+			font-size: 2.0rem;
+			padding-left: 0;
+			padding-left: 1rem;
+		}
+		.header h3{
+			font-size: 1.2rem;
+			padding-top: 0;
+			padding-top: 1rem;
+			padding-left: 0;
+			padding-left: 1rem;
+		}
+		.header p{
+			font-size: 1.0rem;
+			padding-top: 0;
+			padding-top: 1rem;
+			padding-left: 0;
+			margin-bottom: 1rem;
+			padding-left: 1rem;
+			width: 24rem;
+		}
+	/*Caixa/s*/
+		.caixa{
+			margin-top: 0;
+			flex-direction: column;
+			background-image: linear-gradient(to bottom,var(--Ciano) 50%,#4ABEBD 50%);
+		}
+		.caixa1{
+			height: 34vh;
+		}
+		.caixa1 h4,p{
+			
+			padding-left: 0;
+			padding-left: 1.4rem;
+		}
+		.caixa1 h4{
+			width: 20rem;
+		}
+		.p{
+		  width: 15rem;
+		}
+		.p2{
+			width: 15rem;
+			font-size: 1.0rem;
+		}
+		.caixa1 button{
+			width: 22rem;
+			margin-top: 1rem;
+   		     margin-left: 1rem;
+   		    transition: background-image 8s;
+		}
+		
+
+		.caixa2 h3{
+			padding-left: 0;
+			padding-left: 1.4rem;
+		}
+		.caixa2 p{
+			width: 14rem;
+			font-size: 0.9rem;
+		}
+
+}
 /*Fim Media queries*/
 
 
-/*Fim Media queries*/
+
+
+
