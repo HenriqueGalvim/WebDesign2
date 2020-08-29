@@ -16,6 +16,7 @@
  	/*Cores de fundo*/
  	--Azul-Escuro:hsl(218,22%,67%);
 }
+
  /* Container e posicionamentos iniciais/cores*/
 .container{
 	margin-top:4rem;
@@ -70,7 +71,7 @@
 	margin-top: 2rem;
 	margin-left: 3rem;
 	background-color: var(--Amarelo-B);
-	width: 16rem;
+	width: 20vw;
 	height: 3rem;
 	border:none;
 	border-radius: 10px;
@@ -118,10 +119,13 @@
 /*Media queries*/
 /*De 320px até 360px*/
 @media only screen and (min-width: 360px) and (max-width: 400px){
+	body{
+		padding:2rem;
+	}
 		.container{
 		 margin-top: 2rem;
 	    margin-left: 1.3rem;
-	    height: 105vh;
+	    height: 131vh;
 	    width: 90%;
 		}
 	/*Header*/
@@ -143,7 +147,7 @@
 			padding-top: 1rem;
 			padding-left: 0;
 			padding-left: 1rem;
-			width: 17rem;
+		
 		}
 	/*Caixa/s*/
 		.caixa{
@@ -152,7 +156,7 @@
 			background-image: linear-gradient(to bottom,var(--Ciano) 50%,#4ABEBD 50%);
 		}
 		.caixa1{
-			height: 40vh;
+			height: 49vh;
 		}
 		.caixa1 h4,p{
 			
@@ -170,7 +174,7 @@
 			font-size: 0.8rem;
 		}
 		.caixa1 button{
-			
+			width:70vw;
 			margin-top: 1rem;
    		     margin-left: 1rem;
    		     transition: background-image 8s;
@@ -178,6 +182,7 @@
 		
 
 		.caixa2 h3{
+			padding-top:0;
 			padding-left: 0;
 			padding-left: 1.4rem;
 		}
@@ -192,7 +197,7 @@
 		.container{
 		 margin-top: 2rem;
 	    margin-left: 1.3rem;
-	    height: 105vh;
+	    height: 120vh;
 	    width: 90%;
 		}
 	/*Header*/
@@ -241,7 +246,7 @@
 			font-size: 0.8rem;
 		}
 		.caixa1 button{
-
+			width:70vw;
 			margin-top: 1rem;
    		     margin-left: 1rem;
    		     transition: background-image 8s;
@@ -296,7 +301,10 @@
 			background-image: linear-gradient(to bottom,var(--Ciano) 50%,#4ABEBD 50%);
 		}
 		.caixa1{
-			height: 34vh;
+			height: 55vh;
+		}
+		.caixa2{
+		        height: 39vh;
 		}
 		.caixa1 h4,p{
 			
