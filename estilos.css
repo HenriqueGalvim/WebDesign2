@@ -28,9 +28,6 @@
 	border-radius: 10px;
 	
 }
-.header{
-	height: 40%;
-}
 .header h1{
 	color:var(--Ciano);
 	padding-left: 3rem;
@@ -262,7 +259,6 @@
 
 }
 
-/*400px ate 500px*/
 	@media only screen and (min-width: 400px) and (max-width: 500px){
 		.container{
 		 margin-top: 2rem;
@@ -284,13 +280,14 @@
 			padding-left: 1rem;
 		}
 		.header p{
+			padding-right: 1rem;
 			font-size: 1.0rem;
 			padding-top: 0;
 			padding-top: 1rem;
 			padding-left: 0;
 			margin-bottom: 1rem;
 			padding-left: 1rem;
-			width: 24rem;
+			
 		}
 	/*Caixa/s*/
 		.caixa{
@@ -317,7 +314,7 @@
 			font-size: 1.0rem;
 		}
 		.caixa1 button{
-			width: 22rem;
+			width: 80vw;
 			margin-top: 1rem;
    		     margin-left: 1rem;
    		    transition: background-image 8s;
@@ -325,12 +322,13 @@
 		
 
 		.caixa2 h3{
+			padding-top: 3rem;
 			padding-left: 0;
 			padding-left: 1.4rem;
 		}
 		.caixa2 p{
 			width: 14rem;
-			font-size: 0.9rem;
+			font-size: 1.0rem;
 		}
 
 }
